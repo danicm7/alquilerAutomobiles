@@ -1,0 +1,3 @@
+Esta pantalla sirve para eliminar un automobil.
+%Selecciona el automobil de la lista y pulsa eliminar para borrar un automobil de la base de datos.
+    

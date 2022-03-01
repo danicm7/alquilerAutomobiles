@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.EliminarVehiculoController">
+   <children>
+      <ImageView fitHeight="518.0" fitWidth="837.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/fondoPantalla.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonEliminar" layoutX="689.0" layoutY="462.0" mnemonicParsing="false" onAction="#handleButtonEliminar" prefHeight="33.0" prefWidth="126.0" text="Eliminar" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font></Button>
+   <TableView fx:id="tableViewCoches" layoutX="19.0" layoutY="21.0" prefHeight="405.0" prefWidth="789.0">
+        <columns>
+          <TableColumn fx:id="TableColumnMarca" prefWidth="136.0" text="Marca" />
+          <TableColumn fx:id="TableColumnModelo" prefWidth="195.0" text="Modelo" />
+          <TableColumn fx:id="TableColumnCombustible" prefWidth="130.0" text="Combustible" />
+          <TableColumn fx:id="TableColumPlazas" minWidth="0.0" prefWidth="87.0" text="Plazas" />
+            <TableColumn fx:id="TableColumMatricula" prefWidth="114.0" text="Matricula" />
+            <TableColumn fx:id="TableColumColor" prefWidth="176.0" text="Color" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonVolver" layoutX="26.0" layoutY="463.0" mnemonicParsing="false" onAction="#handleButtonVolver" prefHeight="25.0" prefWidth="75.0" text="volver">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="127.0" layoutY="462.0" prefHeight="33.0" prefWidth="497.0" text="Solo aparecen los vehiculos que no se estan usando en este momento" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonInfo" layoutX="647.0" layoutY="462.0" mnemonicParsing="false" onAction="#onActionButtonInfo" prefHeight="33.0" prefWidth="31.0" />
+   </children>
+</AnchorPane>

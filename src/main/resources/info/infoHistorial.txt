@@ -1,0 +1,3 @@
+En esta pantalla se muestra el historial de todos los contratos de alquiler que se han hecho alguna vez.
+%Haz doble click en un contrato para ver las observaciones.
+%Los vehiculos que aparecen con '(R)' delante, significa que el automobil ya ha sido retirado de la empresa.

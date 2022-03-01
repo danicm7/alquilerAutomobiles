@@ -1,0 +1,8 @@
+En esta pantalla puedes hacer nuevas reservas de los vehiculos.
+Selecciona un vehiculo de la tabla y rellena los campos con los datos del alquiler.
+    %DNI -> Deben ser 8 digitos
+    %Nombre -> Cualquier texto, pero no se puede dejar el campo en blanco
+    %Telefono -> Numero con 9 digitos y que empieza en 6
+    %Fecha Fin -> cualquier fecha no anterior al dia de hoy (Max. 90 dias)
+    %Observaciones -> Cualquier cosa que el usuario quiera resaltar. Se puede dejar en blanco
+%Si se introducen dos clientes con el mismo dni, se conservaran los datos del primero, entendiendose que es un cliente ya existente y no se guardaran los datos de un cliente dos veces.

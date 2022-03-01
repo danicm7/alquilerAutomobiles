@@ -1,0 +1,3 @@
+En esta pantalla pueden verse los automobiles que la empresa ha retirado de su catalogo.
+%Ordenados por la fecha final descendente.
+    

@@ -1,0 +1,13 @@
+Esta pantalla sirve para rellenar los datos del nuevo automobil que ha llegado a la empresa.
+% MARCA-> solo letra o espacios en blanco.
+% MODELO-> Solo letras, numeros, o espacios en blanco.
+% MATRICULA-> 4 digitos y 3 letras.
+% RUEDAS-> Entre 1 y 20 ruedas.
+% AUTONOMIA-> Entre 10 y 2000.
+% COLOR-> Solo letras.
+% KM-> Entre 0 y 10000000.
+% COMBUSTIBLE-> Se coje la primera letra del texo %     (g-> gasolina, h->hibrido, d->diesel, e->electrico)
+% PLAZAS-> Entre 0 y 100.
+% TIPO-> Solo letras.
+% EN USO-> Indica si el vehiculo se esta usando actualmente.%    (y/n).
+%No puede existir mas de un automovil con la misma matricula(salvo que el primer automovil hubiera sido retirado).

@@ -1,0 +1,5 @@
+Esta pantalla se usa cuando un contrato de alquiler llega a su fin y el usuario vuelve a la tienda para devolver
+el vehiculo.
+%Tambien puede usarse para ver los vehiculos que se estan usando en este momento.
+%Seleccion el vehiculo de la lista para guardar el vehiculo como disponible de nuevo.
+    

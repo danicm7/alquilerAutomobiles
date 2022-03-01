@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-abr-2020 6:09:23 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Automobil" table="automobil" catalog="alquilerautomobiles" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="marca" type="string">
+            <column name="marca" length="20" />
+        </property>
+        <property name="modelo" type="string">
+            <column name="modelo" length="20" />
+        </property>
+        <property name="matricula" type="string">
+            <column name="matricula" length="10" not-null="true" />
+        </property>
+        <property name="numRuedas" type="java.lang.Integer">
+            <column name="num_ruedas" />
+        </property>
+        <property name="autonomia" type="java.lang.Integer">
+            <column name="autonomia" />
+        </property>
+        <property name="color" type="string">
+            <column name="color" length="15" />
+        </property>
+        <property name="km" type="java.lang.Integer">
+            <column name="km" />
+        </property>
+        <property name="combustible" type="char">
+            <column name="combustible" length="1" not-null="true" />
+        </property>
+        <property name="plazas" type="java.lang.Integer">
+            <column name="plazas" />
+        </property>
+        <property name="tipo" type="string">
+            <column name="tipo" length="20" />
+        </property>
+        <property name="enUso" type="java.lang.Boolean">
+            <column name="enUso" />
+        </property>
+        <set name="alquilers" table="alquiler" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_coche" not-null="true" />
+            </key>
+            <one-to-many class="modelo.Alquiler" />
+        </set>
+    </class>
+</hibernate-mapping>

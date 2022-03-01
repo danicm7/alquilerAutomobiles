@@ -1,0 +1,10 @@
+Esta es la pantalla principal donde podras escojer que quieres hacer.
+%Salir -> cierra el programa.
+%Nueva reserva-> haz una reserva escojiendo entre los coches disponibles.
+%Fin reserva-> Se usa cuando un contrato de alquiler ha terminado y el cliente vuelve a la tienda para de
+volver el vehiculo.
+%Historial-> ver el historial de todos los alquileres anteriores.
+%Ver reservas-> Sirve para ver los contratos de alquiler que estan activos en este momento.
+%Opciones-> Escoje entre eliminar/guardar un vehiculo o crear un nuevo usuario. 
+%Ver vehiculos eliminados-> Aqui se pueden ver los vehiculos los cuales la empresa ha borrado de su catalogo.
+    

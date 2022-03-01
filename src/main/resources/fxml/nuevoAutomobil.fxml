@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.NuevoAutomobilController">
+   <children>
+      <ImageView fitHeight="518.0" fitWidth="792.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/fondoPantalla.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonGuardar" layoutX="640.0" layoutY="446.0" mnemonicParsing="false" onAction="#handleButtonGuardar" prefHeight="33.0" prefWidth="119.0" text="Guardar">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></Button>
+      <Label layoutX="12.0" layoutY="48.0" text="Marca" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="118.0" prefHeight="25.0" prefWidth="72.0" text="Modelo" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="9.0" layoutY="209.0" prefHeight="25.0" prefWidth="88.0" text="Matricula" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="12.0" layoutY="281.0" prefHeight="25.0" prefWidth="139.0" text="Numero de ruedas" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="11.0" layoutY="342.0" prefHeight="25.0" prefWidth="129.0" text="Autonomia (KM)" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="12.0" layoutY="402.0" prefHeight="25.0" prefWidth="50.0" text="Color" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="380.0" layoutY="44.0" prefHeight="25.0" prefWidth="164.0" text="Km actuales del coche" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="382.0" layoutY="122.0" prefHeight="25.0" prefWidth="129.0" text="Combustible" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="382.0" layoutY="209.0" prefHeight="25.0" prefWidth="164.0" text="Numero de  Plazas" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="384.0" layoutY="281.0" prefHeight="25.0" prefWidth="72.0" text="Tipo" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="384.0" layoutY="342.0" prefHeight="25.0" prefWidth="156.0" text="En uso? (Y/N)" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="editTextMarca" layoutX="152.0" layoutY="44.0" />
+      <TextField fx:id="editTextModelo" layoutX="148.0" layoutY="122.0" prefHeight="25.0" prefWidth="156.0" />
+      <TextField fx:id="editTextMatricula" layoutX="148.0" layoutY="209.0" prefHeight="25.0" prefWidth="156.0" />
+      <TextField fx:id="editTextNumRuedas" layoutX="148.0" layoutY="281.0" prefHeight="25.0" prefWidth="156.0" />
+      <TextField fx:id="editTextAutonomia" layoutX="152.0" layoutY="342.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="editTextColor" layoutX="148.0" layoutY="402.0" prefHeight="26.0" prefWidth="156.0" />
+      <TextField fx:id="editTextKm" layoutX="558.0" layoutY="40.0" prefHeight="25.0" prefWidth="164.0" />
+      <TextField fx:id="editTextCombustible" layoutX="558.0" layoutY="122.0" prefHeight="25.0" prefWidth="164.0" />
+      <TextField fx:id="editTextNumPlazas" layoutX="558.0" layoutY="209.0" prefHeight="25.0" prefWidth="164.0" />
+      <TextField fx:id="editTextTipo" layoutX="558.0" layoutY="281.0" prefHeight="25.0" prefWidth="164.0" />
+      <TextField fx:id="editTextEnUso" layoutX="558.0" layoutY="342.0" prefHeight="25.0" prefWidth="164.0" />
+      <Button fx:id="buttonVolver" layoutX="14.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleButtonVolver" prefHeight="25.0" prefWidth="72.0" text="Volver">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+          <Button fx:id="buttonInfo" layoutX="97.0" layoutY="452.0" mnemonicParsing="false" onAction="#onActionButtonInfo" prefHeight="25.0" prefWidth="28.0" />
+   </children>
+</AnchorPane>

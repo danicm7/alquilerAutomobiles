@@ -1,0 +1,4 @@
+Esta pantalla es para inciar sesion
+%El usuario para hacer pruebas es 'a' - 'a'
+%Todas las contrasenas son cifradas(MD5) antes de guardarse en la bse de datos
+    

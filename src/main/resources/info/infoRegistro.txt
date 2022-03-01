@@ -1,0 +1,3 @@
+Esta pantalla es para Crear un nuevo usuario
+%Todas las contrasenas son cifradas(MD5) antes de guardarse en la bse de datos
+    

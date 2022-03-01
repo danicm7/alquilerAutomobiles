@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.verAlquileresController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="806.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/fondoPantalla.jpg" />
+         </image>
+      </ImageView>
+     <TableView fx:id="tableViewAnular" layoutX="13.0" layoutY="14.0" onMouseClicked="#onMouseClickedTableViewHistorial" prefHeight="391.0" prefWidth="773.0">
+        <columns>
+          <TableColumn fx:id="TableColumnMarca" prefWidth="141.0" text="Marca - Modelo" />
+          <TableColumn fx:id="TableColumnNombreCliente" prefWidth="130.0" text="Nombre" />
+          <TableColumn fx:id="TableColumnDni" minWidth="50" prefWidth="123.0" text="DNI" />
+          <TableColumn fx:id="TableColumnFechaInicio" minWidth="50.0" prefWidth="112.0" text="Fecha inicio" />
+          <TableColumn fx:id="TableColumnFechaFin" minWidth="50.0" prefWidth="111.0" text="Fecha fin" />
+            <TableColumn fx:id="TableColumnObservaciones" prefWidth="155.0" text="Observaciones" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonSalir" layoutX="722.0" layoutY="456.0" mnemonicParsing="false" onAction="#handleButtonSalir" prefHeight="25.0" prefWidth="64.0" text="Volver">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   <Button fx:id="buttonInfo" layoutX="684.0" layoutY="456.0" mnemonicParsing="false" onAction="#onActionButtonInfo" prefHeight="25.0" prefWidth="29.0" />
+      <Label layoutX="26.0" layoutY="432.0" prefHeight="55.0" prefWidth="606.0" text="Se muestran los alquileres activos en este momento" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

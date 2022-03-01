@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="501.0" prefWidth="832.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.FinReservaController">
+   <ImageView fitHeight="533.0" fitWidth="874.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../imagenes/fondoPantalla.jpg" />
+      </image>
+   </ImageView>
+     <TableView fx:id="tableViewCoches" layoutX="19.0" layoutY="21.0" prefHeight="405.0" prefWidth="789.0">
+        <columns>
+          <TableColumn fx:id="TableColumnMarca" prefWidth="136.0" text="Marca" />
+          <TableColumn fx:id="TableColumnModelo" prefWidth="195.0" text="Modelo" />
+          <TableColumn fx:id="TableColumnCombustible" prefWidth="130.0" text="Combustible" />
+          <TableColumn fx:id="TableColumPlazas" minWidth="0.0" prefWidth="87.0" text="Plazas" />
+            <TableColumn fx:id="TableColumMatricula" prefWidth="114.0" text="Matricula" />
+            <TableColumn fx:id="TableColumColor" prefWidth="176.0" text="Color" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonVolver" layoutX="14.0" layoutY="477.0" mnemonicParsing="false" onAction="#handleButtonVolver" prefHeight="31.0" prefWidth="75.0" text="volver">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+   <Button fx:id="buttonHecho" layoutX="752.0" layoutY="472.0" mnemonicParsing="false" onAction="#handleButtonHecho" prefHeight="42.0" prefWidth="87.0" text="Hecho" textAlignment="CENTER">
+      <font>
+         <Font name="Corbel Bold" size="18.0" />
+      </font>
+   </Button>
+   <Label fx:id="labelInfo" layoutX="206.0" layoutY="480.0" prefHeight="25.0" prefWidth="531.0" text="Se muestran los automobiles que se estan usando en este momento" textFill="WHITE">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+<Button fx:id="buttonInfo" layoutX="111.0" layoutY="481.0" mnemonicParsing="false" onAction="#onActionButtonInfo" prefHeight="24.0" prefWidth="28.0" />
+</AnchorPane>
