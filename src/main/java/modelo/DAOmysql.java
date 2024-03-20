@@ -118,7 +118,6 @@ public class DAOmysql {
             SessionFactory factory = HibernateUtil.getSessionFactory();
             Session sesio = factory.openSession();
             Query query = sesio.createQuery("from Automobil e where e.matricula = :parametro").setParameter("parametro", automobil.getMatricula());
-            //Query query = sesio.createQuery("from Empleat e where e.empNo=1001");
             List<Automobil> lista = query.list();
             Automobil auto = lista.get(0);
             auto.setEnUso(uso);
